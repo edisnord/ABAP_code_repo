@@ -14,4 +14,7 @@ FORM display_alv using it_output type any table.
     CATCH cx_salv_msg INTO lex_message.
       MESSAGE lex_message TYPE 'E'.
   ENDTRY.
+  
+  call method lo_alv->display.
+  
 ENDFORM.
