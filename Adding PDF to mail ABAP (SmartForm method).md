@@ -45,7 +45,7 @@ call function lv_sfnam
       exporting
          control_parameters = lw_control_parameters
          output_options       = lw_output_options
-         user_settings         = '' "   The point of this is to tell the FM to actually consider our 												parameters inserted above, if left to 'X' it will ignore them
+         user_settings         = '' "   The point of this is to tell the FM to actually consider our parameters inserted above, if left to 'X' it will ignore them
      importing
          job_output_info    = it_sfoutput "Type ssfcrescl
       exceptions
