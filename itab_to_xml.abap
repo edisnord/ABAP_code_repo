@@ -158,7 +158,7 @@ CLASS xmltoal11 IMPLEMENTATION.
         APPEND '</Row>' TO rows.
       ENDAT.
     ENDLOOP.
-    DO colcount TIMES.
+    DO rowcount TIMES.
       LOOP AT it_table INTO wa_table.
         AT FIRST.
           APPEND '<Row ss:AutoFitHeight="0" ss:Height="16.8">' TO rows.
