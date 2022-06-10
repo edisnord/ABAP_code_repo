@@ -1,5 +1,6 @@
 "Credits: Jagdish Patil on https://people.sap.com/jagdish.patil
 "All i did was remove the inline declarations so that it is compatable with older language versions
+"To upload to AL11 open the dataset for output in binary mode and transfer the xstring
 
 CLASS zcl_itab_to_excel DEFINITION.
   PUBLIC SECTION.
