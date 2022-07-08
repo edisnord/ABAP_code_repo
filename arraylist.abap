@@ -12,25 +12,26 @@ CLASS zarraylist DEFINITION
     TYPES:
       ty_lt_list TYPE STANDARD TABLE OF ty_ls_list .
 
-    METHODS constructor
-      IMPORTING
-        !list TYPE ty_lt_list OPTIONAL.
+    METHODS:
+      constructor
+        IMPORTING
+          !list TYPE ty_lt_list OPTIONAL,
 
-    METHODS add IMPORTING e            TYPE REF TO object
-                RETURNING VALUE(added) TYPE abap_bool.
+      add IMPORTING e            TYPE REF TO object
+          RETURNING VALUE(added) TYPE abap_bool,
 
-    METHODS get IMPORTING index      TYPE i
-                RETURNING VALUE(ret) TYPE REF TO object.
+      get IMPORTING index      TYPE i
+          RETURNING VALUE(ret) TYPE REF TO object,
 
-    METHODS contains IMPORTING e           TYPE REF TO object
-                     RETURNING VALUE(cont) TYPE abap_bool.
+      contains IMPORTING e           TYPE REF TO object
+               RETURNING VALUE(cont) TYPE abap_bool,
 
-    METHODS remove importing e TYPE REF TO object
-    RETURNING VALUE(rmoved) TYPE abap_bool.
+      remove IMPORTING e             TYPE REF TO object
+             RETURNING VALUE(rmoved) TYPE abap_bool,
 
-    methods size RETURNING VALUE(size) TYPE i.
+      size RETURNING VALUE(size) TYPE i,
 
-    methods isEmpty returning value(isempty) TYPE abap_bool.
+      isempty RETURNING VALUE(isempty) TYPE abap_bool.
 
   PROTECTED SECTION.
   PRIVATE SECTION.
